@@ -1,0 +1,12 @@
+[project]
+name = "grab-safe-driver"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "boto3>=1.38.23",
+    "kaggle>=1.7.4.5",
+    "kagglehub[pandas-datasets]>=0.3.12",
+    "python-dotenv>=1.1.0",
+]

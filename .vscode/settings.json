@@ -1,0 +1,12 @@
+// {
+//     "python.defaultInterpreterPath": "/usr/bin/python3",
+//     "python.analysis.extraPaths": [
+//         "/home/glue_user/aws-glue-libs/PyGlue.zip:/home/glue_user/spark/python/lib/py4j-0.10.9-src.zip:/home/glue_user/spark/python/",
+//     ]
+// }
+{
+    "python.defaultInterpreterPath": "/usr/bin/python3.11",
+    "python.analysis.extraPaths": [
+        "/usr/lib/spark/python/lib/py4j-0.10.9.7-src.zip:/usr/lib/spark/python/:/usr/lib/spark/python/lib/",
+    ]
+}

@@ -1,0 +1,16 @@
+services:
+  glue_pyspark:
+    image: amazon/aws-glue-libs:5
+    container_name: glue_pyspark
+    stdin_open: true
+    tty: true
+    environment:
+      AWS_PROFILE: ${PROFILE_NAME}
+      DISABLE_SSL: "true"
+    volumes:
+      - ${HOME}/.aws:/home/hadoop/.aws
+      - ${WORKSPACE_LOCATION}:/home/hadoop/workspace
+    ports:
+      - "4040:4040"
+      - "18080:18080"
+    command: pyspark
